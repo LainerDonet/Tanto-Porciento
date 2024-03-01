@@ -4,18 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calcular porciento</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <form action="" id="inFormulario">
-      <label for="inTotal">Total</label>
-      <input type="text" id="inTotal" value="0" />
-      <label for="inParte">Parte</label>
-      <input type="text" id="inParte" value="0" />
-      <label for="inPorciento">Porciento</label>
-      <input type="text" id="inPorciento" value="0" />
-
-      <button type="submit" onclick="ejecuted()">Calcular</button>
-    </form>
+    <div>
+      <h1>Calculadora de Porciento</h1>
+      
+      <form action="" id="inFormulario">
+        <label for="inTotal">Total</label>
+        <input type="text" id="inTotal" value="0" />
+        <label for="inParte">Parte</label>
+        <input type="text" id="inParte" value="0" />
+        <label for="inPorciento">Porciento</label>
+        <input type="text" id="inPorciento" value="0" />
+      </form>
+      <div class="center-button">
+        <button type="submit" onclick="ejecuted()">Calcular</button>
+      </div>
+      
+    </div>
 
     <script src="porciento.js"></script>
   </body>
