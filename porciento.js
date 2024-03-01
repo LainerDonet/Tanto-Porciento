@@ -1,4 +1,5 @@
 const inFormulario = document.getElementById("inFormulario");
+const button = document.getElementById("button");
 
 inFormulario.addEventListener("change", function () {
   const inParte = document.getElementById("inParte");
@@ -26,3 +27,13 @@ function ejecuted() {
     console.log(`parteTotal ${parteTotal}`);
   }
 }
+
+let est = true;
+button.addEventListener("click", ()=>{
+    if (est) {
+       ejecuted(); 
+    } else {
+        location.reload();
+    }
+    est = !est;
+});
